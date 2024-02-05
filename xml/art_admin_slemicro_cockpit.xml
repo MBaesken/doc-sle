@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<article xmlns="http://docbook.org/ns/docbook" xml:base="SLE-Micro-5.4-cockpit.xml" version="5.0"
+<article xmlns="http://docbook.org/ns/docbook" version="5.0"
 xml:id="slemicro-cockpit-54" xml:lang="en">
   <info>
       <title xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:trans="http://docbook.org/ns/transclusion" xmlns:its="http://www.w3.org/2005/11/its">Administering <phrase><phrase os="slemicro">SUSE Linux Enterprise Micro</phrase></phrase> using Cockpit</title>
@@ -13,14 +13,14 @@ xml:id="slemicro-cockpit-54" xml:lang="en">
         </revision>
       </revhistory>
       <meta xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:trans="http://docbook.org/ns/transclusion" xmlns:its="http://www.w3.org/2005/11/its" name="maintainer" content="jsindelarova@suse.com" its:translate="no"/>
-      
+
       <meta xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:trans="http://docbook.org/ns/transclusion" xmlns:its="http://www.w3.org/2005/11/its" name="updated" content="2023-03-13"/>
-      
+
       <meta xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:trans="http://docbook.org/ns/transclusion" xmlns:its="http://www.w3.org/2005/11/its" name="architecture" content="x86_64;zseries;power;aarch64"/>
-      
+
       <meta xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:trans="http://docbook.org/ns/transclusion" xmlns:its="http://www.w3.org/2005/11/its" name="productname"><productname version="slemicro">SUSE Linux Enterprise Micro</productname>
       </meta>
-      
+
       <meta xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:trans="http://docbook.org/ns/transclusion" xmlns:its="http://www.w3.org/2005/11/its" name="title">Administering <phrase><phrase os="slemicro">SLE Micro</phrase></phrase> using Cockpit</meta>
       <meta xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:trans="http://docbook.org/ns/transclusion" xmlns:its="http://www.w3.org/2005/11/its" name="description">
        An administration guide that describes how to manage <phrase><phrase os="slemicro">SLE Micro</phrase></phrase> using the Cockpit web interface.
@@ -28,7 +28,7 @@ xml:id="slemicro-cockpit-54" xml:lang="en">
       <meta xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:trans="http://docbook.org/ns/transclusion" xmlns:its="http://www.w3.org/2005/11/its" name="social-descr">
        Administering using Cockpit
      </meta>
-      
+
       <meta xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:trans="http://docbook.org/ns/transclusion" xmlns:its="http://www.w3.org/2005/11/its" name="category" content="Systems Management"/>
       <dm:docmanager xmlns:dm="urn:x-suse:ns:docmanager" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:trans="http://docbook.org/ns/transclusion" xmlns:its="http://www.w3.org/2005/11/its">
         <dm:bugtracker>
@@ -72,12 +72,12 @@ xml:id="slemicro-cockpit-54" xml:lang="en">
         </variablelist>
       </abstract>
     </info>
-  <section xml:base="../concepts/cockpit-about-cockpit.xml" role="concept" xml:lang="en" version="5.2" xml:id="concept-about-cockpit"><info>
+  <section role="concept" xml:lang="en" version="5.2" xml:id="concept-about-cockpit"><info>
         <abstract xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:trans="http://docbook.org/ns/transclusion" xmlns:its="http://www.w3.org/2005/11/its">
           <para/>
         </abstract>
       <title xmlns:its="http://www.w3.org/2005/11/its" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:trans="http://docbook.org/ns/transclusion">About Cockpit</title><meta xmlns:its="http://www.w3.org/2005/11/its" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:trans="http://docbook.org/ns/transclusion" name="maintainer" content="jsindelarova@suse.com" its:translate="no"/></info>
-  
+
   <para>
     Cockpit is a Web-based graphical interface that enables you to manage
     most administration tasks from one place. You do not need to create
@@ -140,14 +140,14 @@ xml:id="slemicro-cockpit-54" xml:lang="en">
       </para>
     </listitem>
   </itemizedlist>
-  
+
 </section>
-  <section xml:base="../tasks/cockpit-installation.xml" role="task" xml:lang="en" version="5.2" xml:id="cockpit-installation"><info>
+  <section role="task" xml:lang="en" version="5.2" xml:id="cockpit-installation"><info>
         <abstract xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:trans="http://docbook.org/ns/transclusion" xmlns:its="http://www.w3.org/2005/11/its">
           <para/>
         </abstract>
       <title xmlns:its="http://www.w3.org/2005/11/its" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:trans="http://docbook.org/ns/transclusion">Installing Cockpit</title></info>
-  
+
   <section xml:id="cockpit-installation-introduction">
     <title>Introduction</title>
     <para>
@@ -235,13 +235,13 @@ xml:id="slemicro-cockpit-54" xml:lang="en">
     </procedure>
   </section>
 </section>
-  <section xml:base="../concepts/cockpit-authetication.xml" role="concept" xml:lang="en" version="5.2" xml:id="concept-cockpit-authentication"><info>
+  <section role="concept" xml:lang="en" version="5.2" xml:id="concept-cockpit-authentication"><info>
         <abstract xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:trans="http://docbook.org/ns/transclusion" xmlns:its="http://www.w3.org/2005/11/its">
           <para/>
         </abstract>
       <title xmlns:its="http://www.w3.org/2005/11/its" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:trans="http://docbook.org/ns/transclusion">Cockpit authentication</title><meta xmlns:its="http://www.w3.org/2005/11/its" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:trans="http://docbook.org/ns/transclusion" name="maintainer" content="jsindelarova@suse.com" its:translate="no"/></info>
-  
-  
+
+
   <para>
     Cockpit enables you to log in directly to each machine that can expose the
     9090 port. This machine is sometimes referred to as the primary server. It
@@ -262,12 +262,12 @@ xml:id="slemicro-cockpit-54" xml:lang="en">
       other primary servers or use another tool for cluster administration.
     </para>
   </note>
-<section xml:base="../tasks/cockpit-primary-servers.xml" role="task" xml:lang="en" version="5.2" xml:id="cockpit-logging-into-primary"><info>
+<section role="task" xml:lang="en" version="5.2" xml:id="cockpit-logging-into-primary"><info>
           <abstract xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:trans="http://docbook.org/ns/transclusion" xmlns:its="http://www.w3.org/2005/11/its">
             <para/>
           </abstract>
         <title xmlns:its="http://www.w3.org/2005/11/its" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:trans="http://docbook.org/ns/transclusion">Logging in to the primary server directly</title><meta xmlns:its="http://www.w3.org/2005/11/its" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:trans="http://docbook.org/ns/transclusion" name="maintainer" content="jsindelarova@suse.com" its:translate="no"/></info>
-  
+
   <para>
     Whenever you have a direct network access to the 9090 port, you can
     directly log in to the server using your credentials. To do so, follow the
@@ -297,12 +297,12 @@ xml:id="slemicro-cockpit-54" xml:lang="en">
       </para>
     </step>
   </procedure>
-</section><section xml:base="../tasks/cockpit-secondary-servers.xml" role="task" xml:lang="en" version="5.2" xml:id="cockpit-logging-into-secondary-server"><info>
+</section><section role="task" xml:lang="en" version="5.2" xml:id="cockpit-logging-into-secondary-server"><info>
           <abstract xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:trans="http://docbook.org/ns/transclusion" xmlns:its="http://www.w3.org/2005/11/its">
             <para/>
           </abstract>
         <title xmlns:its="http://www.w3.org/2005/11/its" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:trans="http://docbook.org/ns/transclusion">Logging in to secondary servers</title><meta xmlns:its="http://www.w3.org/2005/11/its" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:trans="http://docbook.org/ns/transclusion" name="maintainer" content="jsindelarova@suse.com" its:translate="no"/></info>
-  
+
   <para>
     If your machine does not have a direct access to the 9090 port, you can use
     this machine as a secondary server. Bear in mind that the machine needs to
@@ -411,12 +411,12 @@ xml:id="slemicro-cockpit-54" xml:lang="en">
       </step>
     </procedure>
   </section>
-</section><section xml:base="../tasks/cockpit-switching-access.xml" role="task" xml:lang="en" version="5.2" xml:id="cockpit-switching-admin-access"><info>
+</section><section role="task" xml:lang="en" version="5.2" xml:id="cockpit-switching-admin-access"><info>
           <abstract xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:trans="http://docbook.org/ns/transclusion" xmlns:its="http://www.w3.org/2005/11/its">
             <para/>
           </abstract>
         <title xmlns:its="http://www.w3.org/2005/11/its" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:trans="http://docbook.org/ns/transclusion">Switching to the administration mode</title><meta xmlns:its="http://www.w3.org/2005/11/its" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:trans="http://docbook.org/ns/transclusion" name="maintainer" content="jsindelarova@suse.com" its:translate="no"/></info>
-  
+
   <para>
     By default, a regular user can log in to Cockpit with limited access that does not enable the user to perform administration tasks like managing user accounts, updating the system, and so on.
   </para>
@@ -456,7 +456,7 @@ xml:id="slemicro-cockpit-54" xml:lang="en">
     </step>
   </procedure>
 </section></section>
-  <section xml:base="../tasks/cockpit-configuring-servers.xml" role="task" xml:lang="en" version="5.2" xml:id="cockpit-configuring-servers"><info>
+  <section role="task" xml:lang="en" version="5.2" xml:id="cockpit-configuring-servers"><info>
         <abstract xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:trans="http://docbook.org/ns/transclusion" xmlns:its="http://www.w3.org/2005/11/its">
           <para>
             Using the Cockpit <guimenu>Overview</guimenu> part, you can
@@ -467,7 +467,7 @@ xml:id="slemicro-cockpit-54" xml:lang="en">
           </para>
         </abstract>
       <title xmlns:its="http://www.w3.org/2005/11/its" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:trans="http://docbook.org/ns/transclusion">Configuring servers using Cockpit</title><meta xmlns:its="http://www.w3.org/2005/11/its" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:trans="http://docbook.org/ns/transclusion" name="maintainer" content="jsindelarova@suse.com" its:translate="no"/></info>
-  
+
   <section xml:id="cockpit-configuring-hostname">
     <title>Changing the sever host name</title>
     <para>
@@ -547,15 +547,15 @@ xml:id="slemicro-cockpit-54" xml:lang="en">
       </step>
     </procedure>
   </section>
-  
+
 </section>
-  <section xml:base="../references/cockpit-logs.xml" role="reference" xml:lang="en" version="5.2" xml:id="cockpit-filtering-logs"><info>
+  <section role="reference" xml:lang="en" version="5.2" xml:id="cockpit-filtering-logs"><info>
         <abstract xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:trans="http://docbook.org/ns/transclusion" xmlns:its="http://www.w3.org/2005/11/its">
           <para/>
         </abstract>
       <title xmlns:its="http://www.w3.org/2005/11/its" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:trans="http://docbook.org/ns/transclusion">Filtering Cockpit logs</title><meta xmlns:its="http://www.w3.org/2005/11/its" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:trans="http://docbook.org/ns/transclusion" name="maintainer" content="jsindelarova@suse.com" its:translate="no"/></info>
 
- 
+
 
  <para>
    You can filter the logs according to the following criteria:
@@ -845,22 +845,22 @@ xml:id="slemicro-cockpit-54" xml:lang="en">
      </variablelist>
     </section>
 </section>
-  <section xml:base="../glues/cockpit-storage-plugin.xml" role="glue" xml:lang="en" version="5.2" xml:id="glue-storage-plugin"><info>
+  <section role="glue" xml:lang="en" version="5.2" xml:id="glue-storage-plugin"><info>
     <title xmlns:its="http://www.w3.org/2005/11/its" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:trans="http://docbook.org/ns/transclusion">Managing storage using Cockpit</title>
     <meta xmlns:its="http://www.w3.org/2005/11/its" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:trans="http://docbook.org/ns/transclusion" name="maintainer" content="jsindelarova@suse.com" its:translate="no"/>
   </info>
-  
+
   <para>
     The <guimenu>Storage</guimenu> page enables you to monitor traffic on your
     drives, repartition your system, manage NFS mount, view storage logs, and
     create RAIDs or LVM.
   </para>
-<section xml:base="../tasks/cockpit-monitoring-data-flow.xml" role="task" xml:lang="en" version="5.2" xml:id="task-monitoring-data-flow"><info>
+<section role="task" xml:lang="en" version="5.2" xml:id="task-monitoring-data-flow"><info>
           <abstract xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:trans="http://docbook.org/ns/transclusion" xmlns:its="http://www.w3.org/2005/11/its">
             <para/>
           </abstract>
         <title xmlns:its="http://www.w3.org/2005/11/its" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:trans="http://docbook.org/ns/transclusion">Monitoring data flow on disks</title><meta xmlns:its="http://www.w3.org/2005/11/its" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:trans="http://docbook.org/ns/transclusion" name="maintainer" content="jsindelarova@suse.com" its:translate="no"/></info>
-  
+
   <para>
     The graphs on the <guimenu>Storage</guimenu> page display reading and
     writing data flow to devices. Each device in the graph has a different
@@ -879,23 +879,23 @@ xml:id="slemicro-cockpit-54" xml:lang="en">
       </textobject>
     </mediaobject>
   </figure>
-</section><section xml:base="../glues/cockpit-managing-filesystem.xml" role="glue" xml:lang="en" version="5.2" xml:id="glue-cockpit-managing-filesystems"><info>
+</section><section role="glue" xml:lang="en" version="5.2" xml:id="glue-cockpit-managing-filesystems"><info>
     <title xmlns:its="http://www.w3.org/2005/11/its" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:trans="http://docbook.org/ns/transclusion">Managing file systems</title>
     <meta xmlns:its="http://www.w3.org/2005/11/its" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:trans="http://docbook.org/ns/transclusion" name="maintainer" content="jsindelarova@suse.com" its:translate="no"/>
   </info>
-  
+
   <para>
     The <guimenu>Filesystems</guimenu> view enables you to create a partition
     table and to format or mount file systems. You can sort the mounted
     partition according to <guimenu>Name</guimenu> or <guimenu>Mount
     point</guimenu>.
   </para>
-<section xml:base="../tasks/cockpit-formatting-filesystem.xml" role="task" xml:lang="en" version="5.2" xml:id="cockpit-formatting-partitions"><info>
+<section role="task" xml:lang="en" version="5.2" xml:id="cockpit-formatting-partitions"><info>
             <abstract xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:trans="http://docbook.org/ns/transclusion" xmlns:its="http://www.w3.org/2005/11/its">
               <para/>
             </abstract>
           <title xmlns:its="http://www.w3.org/2005/11/its" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:trans="http://docbook.org/ns/transclusion">Formatting partitions using Cockpit</title><meta xmlns:its="http://www.w3.org/2005/11/its" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:trans="http://docbook.org/ns/transclusion" name="maintainer" content="jsindelarova@suse.com" its:translate="no"/></info>
-  
+
   <para>
     To format the partition, proceed as follows:
   </para>
@@ -917,7 +917,7 @@ xml:id="slemicro-cockpit-54" xml:lang="en">
         Click <guimenu>Format</guimenu> next to the particular partition
         description to open the format window.
       </para>
-      
+
     </step>
     <step xml:id="formatting-filesystems-details">
       <para>
@@ -987,19 +987,19 @@ xml:id="slemicro-cockpit-54" xml:lang="en">
         file.
       </para>
     </step>
-     
+
     <step os="slemicro">
       <para>
         Click <guimenu> Format and mount</guimenu> or <guimenu>Format only</guimenu> to proceed.
       </para>
     </step>
   </procedure>
-</section><section xml:base="../tasks/cockpit-mounting-partitions.xml" role="task" xml:lang="en" version="5.2" xml:id="task-mounting-partitions"><info>
+</section><section role="task" xml:lang="en" version="5.2" xml:id="task-mounting-partitions"><info>
             <abstract xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:trans="http://docbook.org/ns/transclusion" xmlns:its="http://www.w3.org/2005/11/its">
               <para/>
             </abstract>
           <title xmlns:its="http://www.w3.org/2005/11/its" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:trans="http://docbook.org/ns/transclusion">Mounting partitions using Cockpit</title><meta xmlns:its="http://www.w3.org/2005/11/its" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:trans="http://docbook.org/ns/transclusion" name="maintainer" content="jsindelarova@suse.com" its:translate="no"/></info>
-  
+
   <note>
     <title>The partition must be formatted</title>
     <para>
@@ -1055,7 +1055,7 @@ xml:id="slemicro-cockpit-54" xml:lang="en">
       </para>
     </step>
   </procedure>
-</section></section><section xml:base="../tasks/cockpit-managing-nfs-mounts.xml" role="task" xml:lang="en" version="5.2" xml:id="task-managing-NFS-mounts"><info>
+</section></section><section role="task" xml:lang="en" version="5.2" xml:id="task-managing-NFS-mounts"><info>
     <title xmlns:its="http://www.w3.org/2005/11/its" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:trans="http://docbook.org/ns/transclusion">Managing NFS mount points</title>
     <meta xmlns:its="http://www.w3.org/2005/11/its" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:trans="http://docbook.org/ns/transclusion" name="maintainer" content="jsindelarova@suse.com" its:translate="no"/>
     <abstract xmlns:its="http://www.w3.org/2005/11/its" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:trans="http://docbook.org/ns/transclusion">
@@ -1066,7 +1066,7 @@ xml:id="slemicro-cockpit-54" xml:lang="en">
       </para>
     </abstract>
   </info>
-  
+
   <section xml:id="cockpit-adding-nfs-mount">
     <title>Adding an NFS mount point</title>
     <para>
@@ -1181,12 +1181,12 @@ xml:id="slemicro-cockpit-54" xml:lang="en">
               different levels.
             </para>
           </abstract>
-        </info><section xml:base="../tasks/cockpit-creating-raids.xml" role="task" xml:lang="en" version="5.2" xml:id="cockpit-creating-raids"><info>
+        </info><section role="task" xml:lang="en" version="5.2" xml:id="cockpit-creating-raids"><info>
             <abstract xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:trans="http://docbook.org/ns/transclusion" xmlns:its="http://www.w3.org/2005/11/its">
               <para/>
             </abstract>
           <title xmlns:its="http://www.w3.org/2005/11/its" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:trans="http://docbook.org/ns/transclusion">Creating RAIDs using Cockpit</title><meta xmlns:its="http://www.w3.org/2005/11/its" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:trans="http://docbook.org/ns/transclusion" name="maintainer" content="jsindelarova@suse.com" its:translate="no"/></info>
-  
+
   <note>
     <title>Sufficient number of disks</title>
     <para>
@@ -1262,7 +1262,7 @@ xml:id="slemicro-cockpit-54" xml:lang="en">
       </para>
     </step>
   </procedure>
-</section><section xml:base="../tasks/cockpit-modifying-raids.xml" role="task" xml:lang="en" version="5.2" xml:id="cockpit-modifying-raids"><info>
+</section><section role="task" xml:lang="en" version="5.2" xml:id="cockpit-modifying-raids"><info>
     <title xmlns:its="http://www.w3.org/2005/11/its" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:trans="http://docbook.org/ns/transclusion">Modifying RAIDs</title>
     <meta xmlns:its="http://www.w3.org/2005/11/its" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:trans="http://docbook.org/ns/transclusion" name="maintainer" content="jsindelarova@suse.com" its:translate="no"/>
     <abstract xmlns:its="http://www.w3.org/2005/11/its" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:trans="http://docbook.org/ns/transclusion">
@@ -1272,7 +1272,7 @@ xml:id="slemicro-cockpit-54" xml:lang="en">
       </para>
     </abstract>
   </info>
-  
+
   <para>
     To modify an existing RAID, proceed as follows:
   </para>
@@ -1287,7 +1287,7 @@ xml:id="slemicro-cockpit-54" xml:lang="en">
         Click the RAID in <guimenu>Devices</guimenu> to open the RAID details
         view.
       </para>
-      
+
     </step>
     <step>
       <para>
@@ -1313,12 +1313,12 @@ xml:id="slemicro-cockpit-54" xml:lang="en">
   </note>
 </section></section><section><info>
           <title xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:trans="http://docbook.org/ns/transclusion" xmlns:its="http://www.w3.org/2005/11/its">Managing volume groups and LVM</title>
-        </info><section xml:base="../tasks/cockpit-creating-volume-groups.xml" role="task" xml:lang="en" version="5.2" xml:id="cockpit-creating-volume-groups"><info>
+        </info><section role="task" xml:lang="en" version="5.2" xml:id="cockpit-creating-volume-groups"><info>
             <abstract xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:trans="http://docbook.org/ns/transclusion" xmlns:its="http://www.w3.org/2005/11/its">
               <para/>
             </abstract>
           <title xmlns:its="http://www.w3.org/2005/11/its" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:trans="http://docbook.org/ns/transclusion">Creating volume groups</title><meta xmlns:its="http://www.w3.org/2005/11/its" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:trans="http://docbook.org/ns/transclusion" name="maintainer" content="jsindelarova@suse.com" its:translate="no"/></info>
-  
+
   <para>
     To create a volume group of disks, proceed as follows:
   </para>
@@ -1333,7 +1333,7 @@ xml:id="slemicro-cockpit-54" xml:lang="en">
         Under the hamburger menu in <guimenu>Devices</guimenu>, select
         <guimenu>Create LVM2 volume group</guimenu>.
       </para>
-      
+
     </step>
     <step>
       <para>
@@ -1352,12 +1352,12 @@ xml:id="slemicro-cockpit-54" xml:lang="en">
       </para>
     </step>
   </procedure>
-</section><section xml:base="../tasks/cockpit-creating-block-volumes.xml" role="task" xml:lang="en" version="5.2" xml:id="task-creating-block-volume"><info>
+</section><section role="task" xml:lang="en" version="5.2" xml:id="task-creating-block-volume"><info>
             <abstract xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:trans="http://docbook.org/ns/transclusion" xmlns:its="http://www.w3.org/2005/11/its">
               <para/>
             </abstract>
           <title xmlns:its="http://www.w3.org/2005/11/its" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:trans="http://docbook.org/ns/transclusion">Creating logical block volumes</title><meta xmlns:its="http://www.w3.org/2005/11/its" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:trans="http://docbook.org/ns/transclusion" name="maintainer" content="jsindelarova@suse.com" its:translate="no"/></info>
-  
+
   <para>
     If you have a volume group, you can create a logical block volume from it.
     To do so, proceed as follows:
@@ -1408,12 +1408,12 @@ xml:id="slemicro-cockpit-54" xml:lang="en">
       </para>
     </step>
   </procedure>
-</section><section xml:base="../tasks/cockpit-creating-logical-volumes.xml" role="task" xml:lang="en" version="5.2" xml:id="task-creating-logical-volumes"><info>
+</section><section role="task" xml:lang="en" version="5.2" xml:id="task-creating-logical-volumes"><info>
             <abstract xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:trans="http://docbook.org/ns/transclusion" xmlns:its="http://www.w3.org/2005/11/its">
               <para/>
             </abstract>
           <title xmlns:its="http://www.w3.org/2005/11/its" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:trans="http://docbook.org/ns/transclusion">Creating a thin logical volumes</title><meta xmlns:its="http://www.w3.org/2005/11/its" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:trans="http://docbook.org/ns/transclusion" name="maintainer" content="jsindelarova@suse.com" its:translate="no"/></info>
-  
+
   <para>
     If you have a volume group, you can create a thin logical volume as
     described below:
@@ -1491,12 +1491,12 @@ xml:id="slemicro-cockpit-54" xml:lang="en">
       </para>
     </step>
   </procedure>
-</section><section xml:base="../tasks/cockpit-managing-lvm.xml" role="task" xml:lang="en" version="5.2" xml:id="task-managing-lvm"><info>
+</section><section role="task" xml:lang="en" version="5.2" xml:id="task-managing-lvm"><info>
             <abstract xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:trans="http://docbook.org/ns/transclusion" xmlns:its="http://www.w3.org/2005/11/its">
               <para/>
             </abstract>
           <title xmlns:its="http://www.w3.org/2005/11/its" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:trans="http://docbook.org/ns/transclusion">Managing logical volumes</title><meta xmlns:its="http://www.w3.org/2005/11/its" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:trans="http://docbook.org/ns/transclusion" name="maintainer" content="jsindelarova@suse.com" its:translate="no"/></info>
-  
+
   <para>
     To perform any administration task on an existing logical volume,
     perform the following steps:
@@ -1561,16 +1561,16 @@ xml:id="slemicro-cockpit-54" xml:lang="en">
     </step>
   </procedure>
 </section></section></section>
-  <section xml:base="../glues/cockpit-networking-plugin.xml" role="glue" xml:lang="en" version="5.2" xml:id="glue-cockpit-networking"><info>
+  <section role="glue" xml:lang="en" version="5.2" xml:id="glue-cockpit-networking"><info>
     <title xmlns:its="http://www.w3.org/2005/11/its" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:trans="http://docbook.org/ns/transclusion">Managing networking using Cockpit</title>
     <meta xmlns:its="http://www.w3.org/2005/11/its" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:trans="http://docbook.org/ns/transclusion" name="maintainer" content="jsindelarova@suse.com"/>
   </info>
-  
+
   <para>
     After clicking <guimenu>Networking</guimenu>, you can view traffic on your
     system, manage firewall, manage network interfaces, or view network logs.
   </para>
-<section xml:base="../tasks/cockpit-managing-firewall.xml" role="task" xml:lang="en" version="5.2" xml:id="task-managing-firewall-cockpit"><info>
+<section role="task" xml:lang="en" version="5.2" xml:id="task-managing-firewall-cockpit"><info>
     <title xmlns:its="http://www.w3.org/2005/11/its" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:trans="http://docbook.org/ns/transclusion">Managing firewall rules and zones</title>
     <meta xmlns:its="http://www.w3.org/2005/11/its" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:trans="http://docbook.org/ns/transclusion" name="maintainer" content="jsindelarova@suse.com" its:translate="no"/>
     <abstract xmlns:its="http://www.w3.org/2005/11/its" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:trans="http://docbook.org/ns/transclusion">
@@ -1581,7 +1581,7 @@ xml:id="slemicro-cockpit-54" xml:lang="en">
       </para>
     </abstract>
   </info>
-  
+
   <note>
     <title>Cockpit service is mandatory</title>
     <para>
@@ -1612,7 +1612,7 @@ xml:id="slemicro-cockpit-54" xml:lang="en">
         <para>
           Click <guimenu>Add zone</guimenu>.
         </para>
-        
+
       </step>
       <step>
         <para>
@@ -1691,12 +1691,12 @@ xml:id="slemicro-cockpit-54" xml:lang="en">
       </step>
     </procedure>
   </section>
-</section><section xml:base="../concepts/cockpit-network-bonds.xml" role="concept" xml:lang="en" version="5.2" xml:id="concept-network-bonds"><info>
+</section><section role="concept" xml:lang="en" version="5.2" xml:id="concept-network-bonds"><info>
           <abstract xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:trans="http://docbook.org/ns/transclusion" xmlns:its="http://www.w3.org/2005/11/its">
             <para/>
           </abstract>
         <title xmlns:its="http://www.w3.org/2005/11/its" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:trans="http://docbook.org/ns/transclusion">About network bonds</title><meta xmlns:its="http://www.w3.org/2005/11/its" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:trans="http://docbook.org/ns/transclusion" name="maintainer" content="jsindelarova@suse.com" its:translate="no"/></info>
-  
+
   <para>
     A bond interface is a combination of several network interfaces into one
     bond. Depending on the <guimenu>Mode</guimenu> (described further), network
@@ -1704,12 +1704,12 @@ xml:id="slemicro-cockpit-54" xml:lang="en">
     bandwidth. Network bonding can also increase fault tolerance by keeping
     overall connectivity even if some of the bonded interfaces stopped working.
   </para>
-<section xml:base="../tasks/cockpit-managing-bonds.xml" role="task" xml:lang="en" version="5.2" xml:id="cockpit-managing-bonds"><info>
+<section role="task" xml:lang="en" version="5.2" xml:id="cockpit-managing-bonds"><info>
             <abstract xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:trans="http://docbook.org/ns/transclusion" xmlns:its="http://www.w3.org/2005/11/its">
               <para/>
             </abstract>
           <title xmlns:its="http://www.w3.org/2005/11/its" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:trans="http://docbook.org/ns/transclusion">Managing bonds</title><meta xmlns:its="http://www.w3.org/2005/11/its" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:trans="http://docbook.org/ns/transclusion" name="maintainer" content="jsindelarova@suse.com" its:translate="no"/></info>
-  
+
   <section xml:id="task-creating-bonds">
     <title>Adding bonds</title>
     <para>
@@ -1725,7 +1725,7 @@ xml:id="slemicro-cockpit-54" xml:lang="en">
         <para>
           Click <guimenu>Add bond</guimenu>.
         </para>
-        
+
       </step>
       <step>
         <para>
@@ -1955,7 +1955,7 @@ xml:id="slemicro-cockpit-54" xml:lang="en">
         <para>
           Click on the particular bond name to open the details.
         </para>
-        
+
       </step>
       <step>
         <para>
@@ -2011,7 +2011,7 @@ xml:id="slemicro-cockpit-54" xml:lang="en">
       </step>
     </procedure>
   </section>
-</section></section><section xml:base="../tasks/cockpit-managing-bridges.xml" role="task" xml:lang="en" version="5.2" xml:id="task-managing-bridges"><info>
+</section></section><section role="task" xml:lang="en" version="5.2" xml:id="task-managing-bridges"><info>
     <title xmlns:its="http://www.w3.org/2005/11/its" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:trans="http://docbook.org/ns/transclusion">Managing network bridges</title>
     <meta xmlns:its="http://www.w3.org/2005/11/its" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:trans="http://docbook.org/ns/transclusion" name="maintainer" content="jsindelarova@suse.com" its:translate="no"/>
     <abstract xmlns:its="http://www.w3.org/2005/11/its" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:trans="http://docbook.org/ns/transclusion">
@@ -2021,7 +2021,7 @@ xml:id="slemicro-cockpit-54" xml:lang="en">
       </para>
     </abstract>
   </info>
-  
+
   <section xml:id="task-creating-bridges">
     <title>Creating network bridges</title>
     <para>
@@ -2038,7 +2038,7 @@ xml:id="slemicro-cockpit-54" xml:lang="en">
           In the <guimenu>Interfaces</guimenu> view, click <guimenu>Add
           bridge.</guimenu>
         </para>
-        
+
       </step>
       <step>
         <para>
@@ -2140,7 +2140,7 @@ xml:id="slemicro-cockpit-54" xml:lang="en">
           In the <guimenu>Interfaces</guimenu> view, click the bridge name to
           open the details.
         </para>
-        
+
       </step>
       <step>
         <para>
@@ -2181,7 +2181,7 @@ xml:id="slemicro-cockpit-54" xml:lang="en">
       </step>
     </procedure>
   </section>
-</section><section xml:base="../tasks/cockpit-managing-vlans.xml" role="task" xml:lang="en" version="5.2" xml:id="task-managing-vlans"><info>
+</section><section role="task" xml:lang="en" version="5.2" xml:id="task-managing-vlans"><info>
     <title xmlns:its="http://www.w3.org/2005/11/its" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:trans="http://docbook.org/ns/transclusion">Managing VLANs using Cockpit</title>
     <meta xmlns:its="http://www.w3.org/2005/11/its" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:trans="http://docbook.org/ns/transclusion" name="maintainer" content="jsindelarova@suse.com" its:translate="no"/>
     <abstract xmlns:its="http://www.w3.org/2005/11/its" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:trans="http://docbook.org/ns/transclusion">
@@ -2191,7 +2191,7 @@ xml:id="slemicro-cockpit-54" xml:lang="en">
       </para>
     </abstract>
   </info>
-  
+
   <section xml:id="adding-vlans">
     <title>Creating virtual local area network</title>
     <para>
@@ -2208,7 +2208,7 @@ xml:id="slemicro-cockpit-54" xml:lang="en">
           In the <guimenu>Interfaces</guimenu> view, click <guimenu>Add
           VLAN</guimenu>.
         </para>
-        
+
       </step>
       <step>
         <para>
@@ -2258,7 +2258,7 @@ xml:id="slemicro-cockpit-54" xml:lang="en">
         <para>
           In the <guimenu>Interface</guimenu> view, click the VLAN name.
         </para>
-        
+
       </step>
       <step>
         <para>
@@ -2295,12 +2295,12 @@ xml:id="slemicro-cockpit-54" xml:lang="en">
     </procedure>
   </section>
 </section></section>
-  <section xml:base="../glues/cockpit-containers-plugin.xml" role="glue" xml:lang="en" version="5.2" xml:id="cockpit-podman-containers"><info>
+  <section role="glue" xml:lang="en" version="5.2" xml:id="cockpit-podman-containers"><info>
         <abstract xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:trans="http://docbook.org/ns/transclusion" xmlns:its="http://www.w3.org/2005/11/its">
           <para/>
         </abstract>
       <title xmlns:its="http://www.w3.org/2005/11/its" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:trans="http://docbook.org/ns/transclusion">Working with containers</title><meta xmlns:its="http://www.w3.org/2005/11/its" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:trans="http://docbook.org/ns/transclusion" name="maintainer" content="jsindelarova@suse.com" its:translate="no"/></info>
-  
+
   <para>
     After the first login to Cockpit, you need to start Podman. Keep the
     default check box selected to start Podman automatically on each boot.
@@ -2310,12 +2310,12 @@ xml:id="slemicro-cockpit-54" xml:lang="en">
     from registries and manage your container. You can also filter the view by
     entering a filter criterion into the filter field.
   </para>
-<section xml:base="../tasks/cockpit-getting-container-images.xml" role="task" xml:lang="en" version="5.2" xml:id="task-getting-image"><info>
+<section role="task" xml:lang="en" version="5.2" xml:id="task-getting-image"><info>
           <abstract xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:trans="http://docbook.org/ns/transclusion" xmlns:its="http://www.w3.org/2005/11/its">
             <para/>
           </abstract>
         <title xmlns:its="http://www.w3.org/2005/11/its" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:trans="http://docbook.org/ns/transclusion">Getting container images</title><meta xmlns:its="http://www.w3.org/2005/11/its" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:trans="http://docbook.org/ns/transclusion" name="maintainer" content="jsindelarova@suse.com" its:translate="no"/></info>
-  
+
   <para>
     To start a container, you need a container image. To get a container image,
     proceed as follows:
@@ -2326,7 +2326,7 @@ xml:id="slemicro-cockpit-54" xml:lang="en">
         Navigate to the <guimenu>Podman containers</guimenu> page.
       </para>
     </step>
-    
+
 <step os="slemicro_5.4">
   <para>
     In the <guimenu>Images</guimenu> view, click <guimenu>+Get new image</guimenu>.
@@ -2365,12 +2365,12 @@ xml:id="slemicro-cockpit-54" xml:lang="en">
       </para>
     </step>
   </procedure>
-</section><section xml:base="../tasks/cockpit-managing-containers.xml" role="task" xml:lang="en" version="5.2" xml:id="task-example"><info>
+</section><section role="task" xml:lang="en" version="5.2" xml:id="task-example"><info>
           <abstract xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:trans="http://docbook.org/ns/transclusion" xmlns:its="http://www.w3.org/2005/11/its">
             <para/>
           </abstract>
         <title xmlns:its="http://www.w3.org/2005/11/its" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:trans="http://docbook.org/ns/transclusion">Managing containers using Cockpit</title><meta xmlns:its="http://www.w3.org/2005/11/its" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:trans="http://docbook.org/ns/transclusion" name="maintainer" content="jsindelarova@suse.com" its:translate="no"/></info>
-  
+
   <section xml:id="task-running-containers">
     <title>Running new containers from images</title>
     <note>
@@ -2391,8 +2391,8 @@ xml:id="slemicro-cockpit-54" xml:lang="en">
           Navigate to the <guimenu>Podman containers</guimenu> page.
         </para>
       </step>
-      
-      
+
+
     <step os="slemicro_5.4">
       <para>Click the arrow button next to the container image you want to use.</para>
     </step>
@@ -2405,7 +2405,7 @@ xml:id="slemicro-cockpit-54" xml:lang="en">
               In the <guimenu>Details</guimenu> tab, enter the following details:
             </para>
             <variablelist>
-              
+
               <varlistentry>
                 <term>Name</term>
                 <listitem>
@@ -2414,7 +2414,7 @@ xml:id="slemicro-cockpit-54" xml:lang="en">
                   </para>
                 </listitem>
               </varlistentry>
-              
+
               <varlistentry>
                 <term>Command</term>
                 <listitem>
@@ -2457,9 +2457,9 @@ xml:id="slemicro-cockpit-54" xml:lang="en">
               </para>
                 </listitem>
               </varlistentry>
-              
+
               <varlistentry os="slemicro_5.4">
-                <term>Port mapping</term>     
+                <term>Port mapping</term>
                 <listitem>
                   <para>
                     After you click the <guimenu>Add port mapping</guimenu> button, specify the host IP address, the host port to map the container port onto, the container port and select the protocol. If you do not set the host IP address or set the value to 0.0.0.0, the port is bound to ALL host IP addresses. If you omit the host port, a random one is used for the mapping.
@@ -2470,7 +2470,7 @@ xml:id="slemicro-cockpit-54" xml:lang="en">
                 <term>Volumes</term>
                 <listitem>
                   <para>
-                    This field maps a path in a container onto a path on the host machine. Fill in the host path, the container path and select the SELinux label. 
+                    This field maps a path in a container onto a path on the host machine. Fill in the host path, the container path and select the SELinux label.
                   </para>
                   <para>
                     The SELinux label <guimenu>private</guimenu> defines that the volume is accessible only from the particular container. The <guimenu>shared</guimenu> label means that all containers can access the volume.
@@ -2486,24 +2486,24 @@ xml:id="slemicro-cockpit-54" xml:lang="en">
                 </listitem>
               </varlistentry>
             </variablelist>
-            
-          
-          
-            
+
+
+
+
                 </step>
-      
+
       <step os="slemicro_5.4">
         <para>
           To create the container, click <guimenu>Run</guimenu>.
         </para>
       </step>
     </procedure>
-       
+
   </section>
   <section xml:id="further-actions-with-containers">
     <title>Further actions with running containers</title>
     <para>
-      Under the three-dots menu, you can perform the following actions: 
+      Under the three-dots menu, you can perform the following actions:
     </para>
     <itemizedlist>
        <listitem>
@@ -2547,19 +2547,19 @@ xml:id="slemicro-cockpit-54" xml:lang="en">
     </itemizedlist>
 
     <para>
-      By expanding the container details, you can access the container's terminal in the 
-      <guimenu>Console</guimenu> tab and view its information in other tabs. 
+      By expanding the container details, you can access the container's terminal in the
+      <guimenu>Console</guimenu> tab and view its information in other tabs.
           tab and view the container information in corresponding tabs.
     </para>
-    
+
   </section>
 </section></section>
-  <section xml:base="../glues/cockpit-user-management.xml" role="glue" xml:lang="en" version="5.2" xml:id="glue-managing-users"><info>
+  <section role="glue" xml:lang="en" version="5.2" xml:id="glue-managing-users"><info>
         <abstract xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:trans="http://docbook.org/ns/transclusion" xmlns:its="http://www.w3.org/2005/11/its">
           <para/>
         </abstract>
       <title xmlns:its="http://www.w3.org/2005/11/its" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:trans="http://docbook.org/ns/transclusion">Users administration using Cockpit</title><meta xmlns:its="http://www.w3.org/2005/11/its" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:trans="http://docbook.org/ns/transclusion" name="maintainer" content="jsindelarova@suse.com" its:translate="no"/></info>
-  
+
   <note>
     <title>Users administration only for server administrators</title>
     <para>
@@ -2578,7 +2578,7 @@ xml:id="slemicro-cockpit-54" xml:lang="en">
         <xref linkend="task-creating-users-cockpit"/>
       </para>
     </listitem>
-    
+
     <listitem>
       <para>
         Assigning <command>sudo</command> privileges to user accounts as described in
@@ -2598,12 +2598,12 @@ xml:id="slemicro-cockpit-54" xml:lang="en">
       </para>
     </listitem>
   </itemizedlist>
-<section xml:base="../tasks/cockpit-modifying-accounts.xml" role="task" xml:lang="en" version="5.2" xml:id="task-modifying-user-accounts"><info>
+<section role="task" xml:lang="en" version="5.2" xml:id="task-modifying-user-accounts"><info>
         <abstract xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:trans="http://docbook.org/ns/transclusion" xmlns:its="http://www.w3.org/2005/11/its">
           <para/>
         </abstract>
       <title xmlns:its="http://www.w3.org/2005/11/its" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:trans="http://docbook.org/ns/transclusion">Modifying existing user accounts</title><meta xmlns:its="http://www.w3.org/2005/11/its" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:trans="http://docbook.org/ns/transclusion" name="maintainer" content="jsindelarova@suse.com" its:translate="no"/></info>
-  
+
   <para>
     To modify a user account, proceed as follows:
   </para>
@@ -2641,7 +2641,7 @@ xml:id="slemicro-cockpit-54" xml:lang="en">
             </para>
           </listitem>
         </varlistentry>
-        
+
         <varlistentry>
           <term>Manage access to the account</term>
           <listitem>
@@ -2684,7 +2684,7 @@ xml:id="slemicro-cockpit-54" xml:lang="en">
       </variablelist>
     </step>
   </procedure>
-</section><section xml:base="../tasks/cockpit-creating-users.xml" role="task" xml:lang="en" version="5.2" xml:id="task-creating-users-cockpit"><info>
+</section><section role="task" xml:lang="en" version="5.2" xml:id="task-creating-users-cockpit"><info>
     <title xmlns:its="http://www.w3.org/2005/11/its" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:trans="http://docbook.org/ns/transclusion">Creating user accounts using Cockpit</title>
     <meta xmlns:its="http://www.w3.org/2005/11/its" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:trans="http://docbook.org/ns/transclusion" name="maintainer" content="jsindelarova@suse.com" its:translate="no"/>
     <abstract xmlns:its="http://www.w3.org/2005/11/its" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:trans="http://docbook.org/ns/transclusion">
@@ -2694,7 +2694,7 @@ xml:id="slemicro-cockpit-54" xml:lang="en">
       </para>
     </abstract>
   </info>
-  
+
   <para>
     To add a new user to the system, proceed as follows:
   </para>
@@ -2712,7 +2712,7 @@ xml:id="slemicro-cockpit-54" xml:lang="en">
     </step>
     <step>
       <para>
-        Fill in the user account details. You can assign a different home directory to the user in the drop-down <guimenu>Home directory</guimenu> menu. If you do not specify a directory, the standard <filename>/home/<replaceable>USERNAME</replaceable></filename> path is used. 
+        Fill in the user account details. You can assign a different home directory to the user in the drop-down <guimenu>Home directory</guimenu> menu. If you do not specify a directory, the standard <filename>/home/<replaceable>USERNAME</replaceable></filename> path is used.
       </para>
       <para>
         If you select <guimenu>Disallow password authentication</guimenu>, the user will have to use an authentication method other than filling in password, for example, SSH login.
@@ -2732,23 +2732,23 @@ xml:id="slemicro-cockpit-54" xml:lang="en">
     </step>
   </procedure>
 </section></section>
-  <section xml:base="../glues/cockpit-managing-services.xml" role="glue" xml:lang="en" version="5.2" xml:id="glue-services-management"><info>
+  <section role="glue" xml:lang="en" version="5.2" xml:id="glue-services-management"><info>
         <abstract xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:trans="http://docbook.org/ns/transclusion" xmlns:its="http://www.w3.org/2005/11/its">
           <para/>
         </abstract>
       <title xmlns:its="http://www.w3.org/2005/11/its" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:trans="http://docbook.org/ns/transclusion">Managing services using Cockpit</title><meta xmlns:its="http://www.w3.org/2005/11/its" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:trans="http://docbook.org/ns/transclusion" name="maintainer" content="jsindelarova@suse.com" its:translate="no"/></info>
-  
-  
+
+
   <para>
     The following sections describe how to start, stop and restart a service, target,
     socket, timer or path.
   </para>
-<section xml:base="../tasks/cockpit-managing-systemd-units.xml" role="task" xml:lang="en" version="5.2" xml:id="task-systemd-units"><info>
+<section role="task" xml:lang="en" version="5.2" xml:id="task-systemd-units"><info>
           <abstract xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:trans="http://docbook.org/ns/transclusion" xmlns:its="http://www.w3.org/2005/11/its">
             <para/>
           </abstract>
         <title xmlns:its="http://www.w3.org/2005/11/its" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:trans="http://docbook.org/ns/transclusion">Managing <systemitem class="daemon">systemd</systemitem> units</title><meta xmlns:its="http://www.w3.org/2005/11/its" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:trans="http://docbook.org/ns/transclusion" name="maintainer" content="jsindelarova@suse.com" its:translate="no"/></info>
-  
+
   <para>
     To manage a <systemitem class="daemon">systemd</systemitem> unit, proceed as follows:
   </para>
@@ -2803,7 +2803,7 @@ xml:id="slemicro-cockpit-54" xml:lang="en">
       </itemizedlist>
     </step>
   </procedure>
-</section><section xml:base="../tasks/cockpit-creating-timers.xml" role="task" xml:lang="en" version="5.2" xml:id="task-creating-systemd-timers"><info>
+</section><section role="task" xml:lang="en" version="5.2" xml:id="task-creating-systemd-timers"><info>
     <title xmlns:its="http://www.w3.org/2005/11/its" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:trans="http://docbook.org/ns/transclusion">Creating new timers</title>
     <meta xmlns:its="http://www.w3.org/2005/11/its" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:trans="http://docbook.org/ns/transclusion" name="maintainer" content="jsindelarova@suse.com" its:translate="no"/>
     <abstract xmlns:its="http://www.w3.org/2005/11/its" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:trans="http://docbook.org/ns/transclusion">
@@ -2814,7 +2814,7 @@ xml:id="slemicro-cockpit-54" xml:lang="en">
       </para>
     </abstract>
   </info>
-  
+
   <note>
     <title>Overriding existing timers</title>
     <para>
@@ -2896,7 +2896,7 @@ xml:id="slemicro-cockpit-54" xml:lang="en">
     </step>
   </procedure>
 </section></section>
-  <section xml:base="../concepts/cockpit-selinux.xml" role="concept" xml:lang="en" version="5.2" xml:id="concept-SELinux"><info>
+  <section role="concept" xml:lang="en" version="5.2" xml:id="concept-SELinux"><info>
     <title xmlns:its="http://www.w3.org/2005/11/its" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:trans="http://docbook.org/ns/transclusion">SELinux mode and policy</title>
     <meta xmlns:its="http://www.w3.org/2005/11/its" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:trans="http://docbook.org/ns/transclusion" name="maintainer" content="jsindelarova@suse.com" its:translate="no"/>
     <abstract xmlns:its="http://www.w3.org/2005/11/its" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:trans="http://docbook.org/ns/transclusion">
@@ -2906,7 +2906,7 @@ xml:id="slemicro-cockpit-54" xml:lang="en">
       </para>
     </abstract>
   </info>
-  
+
   <para>
     On SLE Micro, SELinux is in the enforcing mode by default. To temporarily
     switch to the permissive mode, click the button with the
@@ -2925,7 +2925,7 @@ xml:id="slemicro-cockpit-54" xml:lang="en">
     or the ansible configuration file that can be applied on other servers.
   </para>
 </section>
-  <section xml:base="../concepts/cockpit-system-update.xml" role="concept" xml:lang="en" version="5.2" xml:id="concept-example"><info>
+  <section role="concept" xml:lang="en" version="5.2" xml:id="concept-example"><info>
     <title xmlns:its="http://www.w3.org/2005/11/its" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:trans="http://docbook.org/ns/transclusion">Updates and snapshots</title>
     <meta xmlns:its="http://www.w3.org/2005/11/its" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:trans="http://docbook.org/ns/transclusion" name="maintainer" content="jsindelarova@suse.com" its:translate="no"/>
     <abstract xmlns:its="http://www.w3.org/2005/11/its" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:trans="http://docbook.org/ns/transclusion">
@@ -2936,7 +2936,7 @@ xml:id="slemicro-cockpit-54" xml:lang="en">
       </para>
     </abstract>
   </info>
-  
+
   <important>
     <title>No system updates without registering your system</title>
     <para>
@@ -2957,13 +2957,13 @@ xml:id="slemicro-cockpit-54" xml:lang="en">
     Cockpit enables you to update your <phrase><phrase os="slemicro">SLE Micro</phrase></phrase> instance or perform a
     rollback from the <literal>Software Updates</literal> menu.
   </para>
-  
-<section xml:base="../tasks/cockpit-managing-updates.xml" role="task" xml:lang="en" version="5.2" xml:id="task-managing-updates"><info>
+
+<section role="task" xml:lang="en" version="5.2" xml:id="task-managing-updates"><info>
           <abstract xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:trans="http://docbook.org/ns/transclusion" xmlns:its="http://www.w3.org/2005/11/its">
             <para/>
           </abstract>
         <title xmlns:its="http://www.w3.org/2005/11/its" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:trans="http://docbook.org/ns/transclusion">Updating <phrase><phrase os="slemicro">SLE Micro</phrase></phrase> using Cockpit</title><meta xmlns:its="http://www.w3.org/2005/11/its" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:trans="http://docbook.org/ns/transclusion" name="maintainer" content="jsindelarova@suse.com" its:translate="no"/></info>
-  
+
   <para>
     To update your system, proceed as follows:
   </para>
@@ -3007,12 +3007,12 @@ xml:id="slemicro-cockpit-54" xml:lang="en">
       </substeps>
     </step>
   </procedure>
-</section><section xml:base="../tasks/cockpit-performing-rollback.xml" role="task" xml:lang="en" version="5.2" xml:id="task-performing-rollback"><info>
+</section><section role="task" xml:lang="en" version="5.2" xml:id="task-performing-rollback"><info>
           <abstract xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:trans="http://docbook.org/ns/transclusion" xmlns:its="http://www.w3.org/2005/11/its">
             <para/>
           </abstract>
         <title xmlns:its="http://www.w3.org/2005/11/its" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:trans="http://docbook.org/ns/transclusion">Performing rollbacks</title><meta xmlns:its="http://www.w3.org/2005/11/its" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:trans="http://docbook.org/ns/transclusion" name="maintainer" content="jsindelarova@suse.com" its:translate="no"/></info>
-  
+
   <para>
     To perform a rollback of your system, proceed as follows:
   </para>
@@ -3038,10 +3038,10 @@ xml:id="slemicro-cockpit-54" xml:lang="en">
     currently active snapshot.
   </para>
 </section></section>
-  <section xml:base="../common/legal.xml" version="5.2" xml:id="legal-disclaimer"><info>
+  <section version="5.2" xml:id="legal-disclaimer"><info>
     <title xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xlink="http://www.w3.org/1999/xlink">Legal Notice</title>
   </info>
-  
+
   <para> Copyright© 2006–<?dbtimestamp format="Y"?>
  SUSE LLC and contributors.
   All rights reserved. </para>
@@ -3063,11 +3063,11 @@ xml:id="slemicro-cockpit-54" xml:lang="en">
     the translators shall be held liable for possible errors or the consequences thereof.
   </para>
 </section>
-  <appendix xmlns:its="http://www.w3.org/2005/11/its" xml:base="../common/license_gfdl1.2.xml" version="5.2" role="legal" its:translate="no" xml:id="doc-gfdl-license"><info>
+  <appendix xmlns:its="http://www.w3.org/2005/11/its" version="5.2" role="legal" its:translate="no" xml:id="doc-gfdl-license"><info>
    <title xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xlink="http://www.w3.org/1999/xlink">GNU Free Documentation License</title>
  </info>
 
- 
+
 
  <para>
   Copyright (C) 2000, 2001, 2002 Free Software Foundation, Inc. 51 Franklin St,
